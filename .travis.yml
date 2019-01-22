@@ -1,7 +1,15 @@
+# https://github.com/elixir-lang/elixir/blob/master/lib/elixir/pages/Compatibility%20and%20Deprecations.md#compatibility-between-elixir-and-erlangotp
 language: elixir
 elixir:
-  - 1.4
+    - 1.6
+    - 1.7
+    - 1.8
+sudo: false
 otp_release:
-  - 20.0
-  - 19.3
-  - 18.3
+    - 19.3
+    - 20.3
+    - 21.2
+matrix:
+  exclude:
+    - elixir: 1.8
+      otp_release: 19.3
