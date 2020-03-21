@@ -44,7 +44,7 @@ defmodule Pinglix.Mixfile do
   defp deps do
     [
       {:ex_doc, ">= 0.0.0", only: :dev},
-      {:dialyxir, "~> 0.5", only: :dev},
+      {:dialyxir, "~> 1.0", only: :dev},
       {:timex, "~> 3.0"},
       {:poison, "~> 4.0.1"},
       {:plug, "~> 1.0"}]
